@@ -228,14 +228,8 @@ footer a {
     cursor:auto;
 }
 
-.contact-form input,
-.contact-form textarea:hover {
-    background-color: white;
-}
-
 .contact-form input[type="submit"] {
     background-color: #555;
-    color: #fff;
     border: none;
     cursor: pointer;
     margin-top: 20px;
@@ -243,10 +237,6 @@ footer a {
     border-radius: 5px;
     width: 100px;
     align-self: center;
-}
-
-.contact-form input[type="submit"]:hover {
-    background-color: #252525;
 }
 
 footer img {
