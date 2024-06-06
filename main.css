@@ -16,8 +16,7 @@ h2 {
 }
 
 .project-card {
-    width: 100%;
-    max-width: 350px;
+    width: 300px;
     background-color: #fdfdfd;
     margin: 20px;
     text-align: center;
@@ -78,3 +77,14 @@ input[type="button"]:hover {
     }
 }
 
+@media (max-width: 480px) {
+    .project-card {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+    }
+
+    .project-card p {
+        font-size: small;
+    }
+}

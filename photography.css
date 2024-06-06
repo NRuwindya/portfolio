@@ -36,8 +36,3 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 767px) {
-    .gallery img {
-        width: calc(50% - 20px);
-    }
-}
