@@ -1,0 +1,43 @@
+@import url('style.css');
+
+.container p {
+    text-align: justify;
+    margin: 10px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.container p a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.container p a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+    .gallery img {
+        width: calc(50% - 20px);
+    }
+}

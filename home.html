@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruwindya Niunhellage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>Hi! I'm Ruwindya Niunhellage</h1>
+            <p class="typing"></p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>What I Offer</h2>
+        <h3>Below is a list of the services I offer. Contact me if you want to know more.</h3>
+        <div class="service-cards">
+            <div class="card">
+                <img src="images/UIUX.png" alt="UI/UX">
+                <h3>UI/UX Designs</h3>
+                <p>Creating intuitive and user-friendly designs.</p>
+                <input type="button" value="View Projects" onclick="location.href='uiux_main.html'">
+            </div>
+            <div class="card">
+                <img src="images/frontdev.png" alt="Frontend Development">
+                <h3>Frontend Development</h3>
+                <p>Building modern and responsive websites.</p>
+                <input type="button" value="View Projects" onclick="location.href='frontend_main.html'">
+            </div>
+            <div class="card">
+                <img src="images/webdesign.png" alt="Graphic Designs">
+                <h3>Graphic Designs</h3>
+                <p>Building modern and responsive websites.</p>
+                <input type="button" value="View Projects" onclick="location.href='graphic_main.html'">
+            </div>
+            <div class="card">
+                <img src="images/photography.png" alt="Photography">
+                <h3>Photography</h3>
+                <p>Nature's wonders through the lens.</p>
+                <input type="button" value="View Gallery" onclick="location.href='photography.html'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-section">
+            <p>Hey there! I'm a second-year undergraduate student at the Informatics Institute of
+                    Technology, affiliated with the University of Westminster, diving deep into Computer Science.
+                My journey into the tech world has been a thrilling ride of growth and discovery. I'm passionate about UI/UX
+                    design and frontend development, finding joy in creating visually appealing interfaces.
+                    Whether I'm brainstorming innovative designs or coding dynamic web applications, I'm always up for a
+                    challenge.
+                    But it's not all about tech - sports hold a special place in my heart. I spent about 7 years in athletics,
+                    honing my teamwork skills and fostering my passion for sports.
+                    Join me on this exciting journey as we explore the boundless potential of technology to reshape our world!
+                </p>
+                </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <section class="contact-section">
+            <p>
+                Feel free to reach out to me with any inquiries, collaborations, or just to share your thoughts. Whether you
+                have a project in mind, want to discuss the latest tech trends, or simply want to say hello, my virtual door is always
+                open. Your feedback is highly appreciated, and I look forward to engaging with you.
+                <br><br> 
+                Ruwindya Niunhellage
+                <br>
+                <a href="mailto:nruvindya12@gmail.com">nruvindya12@gmail.com</a>
+                <br><br>
+                <a href="https://www.linkedin.com/in/ruwindyaniunhellage/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.shutterstock.com/g/Niunhellage+Ruwindya" target="_blank"><img src="images/shutterstock.png" alt="Shutterstock"></a>
+                <a href="https://www.behance.net/nruvindya" target="_blank"><img src="images/behance.png" alt="Behance"></a>
+            </p>
+    
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="99683806-dc40-4cf8-a67b-b9ac26b659de">
+            
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+            
+        </section>
+    </footer>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>

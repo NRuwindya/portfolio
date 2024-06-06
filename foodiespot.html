@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruwindya Niunhellage</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html#home">Home</a></li>
+                <li><a href="home.html#services" class="active">Services</a></li>
+                <li><a href="home.html#about">About</a></li>
+                <li><a href="home.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <h2>Foodiespot</h2>
+        <h4>Food recipe providing mobile app</h4>
+        <div class="image-row">
+            <div class="image-container">
+                <img src="images/ui_foodiespot_low.png" alt="The prototype" class="foodiespot">
+                <input type="button" value="View the low-fidelity prototype" class="foodiespot-button" onclick="window.open('https://www.figma.com/file/14QZ1OOVfmd28sRl8oYOqT/Figma-basics?type=design&mode=design&t=5PrfU81Fv6a5ZNWv-0', '_blank');">
+            </div>
+            <div class="image-container">
+                <img src="images/ui_foodiespot_high.png" alt="The prototype" class="foodiespot">
+                <input type="button" value="View the low-fidelity prototype" class="foodiespot-button" onclick="window.open('https://www.figma.com/file/QhRRVQVVUvmgonNZo0UJ47/20220564_HCI?type=design&node-id=97%3A479&mode=design&t=vWFKJ3vvT6AvSnfK-1', '_blank');">
+            </div>
+        </div>
+        <h3>Project Overview:</h3>
+        <p>Foodiespot is a food recipe providing app developed to address common challenges faced by individuals with limited cooking knowledge and busy schedules. The app aims to simplify meal planning, promote healthier eating practices, and offer resources for quick and simple meal ideas.</p>
+    
+        <h3>Problem Statement:</h3>
+        <li>Limited cooking knowledge leading to last-minute, unhealthy, or repetitive food choices.</li>
+        <li>Unfamiliarity with ingredients affecting meal diversity.</li>
+        <li>Challenges in meal planning due to busy schedules.</li>
+    
+        <h3>User Needs and Requirements Based on User Research</h3>
+        <li>Users need a simple and easy-to-use interface for meal planning.</li>
+        <li>Instructional support to improve cooking abilities.</li>
+        <li>Preference for healthier recipes with nutritional information.</li>
+            
+        <h3>User Persona</h3>
+        <img src="images/food_persona.png" alt="Foodiespot user persona">
+        <h3>User Scenario</h3>
+        <img src="images/food_scenario.png" alt="Foodiespot user scenario">
+        <h3>User Journey Map</h3>
+        <img src="images/food_map.png" alt="Foodiespot user journey map">
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <section class="contact-section">
+            <p>
+                Feel free to reach out to me with any inquiries, collaborations, or just to share your thoughts. Whether you
+                have a project in mind, want to discuss the latest tech trends, or simply want to say hello, my virtual door is always
+                open. Your feedback is highly appreciated, and I look forward to engaging with you.
+                <br><br> 
+                Ruwindya Niunhellage
+                <br>
+                <a href="mailto:nruvindya12@gmail.com">nruvindya12@gmail.com</a>
+                <br><br>
+                <!-- Social media icons -->
+                <a href="https://www.linkedin.com/in/ruwindyaniunhellage/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.shutterstock.com/g/Niunhellage+Ruwindya" target="_blank"><img src="images/shutterstock.png" alt="Shutterstock"></a>
+                <a href="https://twitter.com/YourProfile" target="_blank"><img src="images/behance.png" alt="Shutterstock"></a>
+            </p>
+    
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="99683806-dc40-4cf8-a67b-b9ac26b659de">
+            
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+@import url('style.css');
+
+.container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h3, p, li {
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container img {
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    animation: slideInFromRight 1s ease-out;
+}
+
+.signup-button {
+    background-color: rgba(136, 53, 143, 0.505);
+    border-radius: 5px;
+    margin: 20px;
+    color: white;
+}
+
+.signup-button:hover {
+    color: black;
+    background-color: rgba(164, 47, 162, 0.573);
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    margin: 1%;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.foodiespot-button {
+    background-color: rgba(181, 93, 93, 0.776);
+    border-radius: 5px;
+    margin: 20px;
+    color: white;
+    align-self: center;
+}
+
+.foodiespot-button:hover {
+    color: black;
+    background-color: rgba(255, 119, 119, 0.612);
+}
+
+.solex_img { 
+    width: 600px;
+    height: auto;
+}
+
+.solex_button {
+    background-color: rgb(165, 165, 165);
+    border-radius: 5px;
+    margin: 20px;
+    align-self: center;
+}
+
+.solex_button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.edufix_solex_buttons {
+    background-color: #447bdad9;
+    border-radius: 5px;
+    margin: 20px;
+    align-self: center; 
+}
+
+.edufix_solex_buttons:hover {
+    color: rgb(255, 255, 255);
+    background-color: #00276a;
+}
+
+.go_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.go_images p {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: 510
+}
+
+.go_images .image-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.go_images img {
+    max-width: 45%;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.go_images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.container a{
+    color: rgb(70, 165, 70);
+}
+
+.go_button {
+    background-color: rgb(162, 255, 162);
+    border-radius: 5px;
+}
+
+.go_button:hover {
+    background-color: rgb(70, 165, 70);
+}
+@media (max-width: 768px) {
+    .container h3, p, li {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .solex_img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .go_images .image-row {
+        flex-direction: column;
+    }
+
+    .go_images img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h3, p, li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container img {
+        max-width: 400px;
+    }
+
+    .solex_img {
+        max-width: 400px;
+    }
+}  

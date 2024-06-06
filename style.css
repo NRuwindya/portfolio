@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.4em;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 45px;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+header {
+    background-color: rgb(28, 28, 28);
+    padding: 20px;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #fff;
+    background-color: #555;
+}
+
+section {
+    padding: 30px;
+}
+
+#home {
+    background-image: url('images/bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 900px auto; 
+    background-color: rgb(28, 28, 28);
+    color: white;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.intro h1 {
+    font-size: 3em;
+    animation: fadeIn 2s ease-in-out;
+    line-height: 50px;
+}
+
+.typing {
+    font-size: 1.5em;
+    border-right: .15em solid transparent; 
+    animation: blink-caret .75s step-end infinite;
+    white-space: nowrap;
+}
+
+@keyframes blink-caret {
+    from { border-color: transparent; }
+    to { border-color: transparent; }
+}
+
+#services {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 250px; 
+    color: #000000;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 45px;
+}
+
+input {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+}
+
+input:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* About Section Styles */
+#about {
+    background: linear-gradient(rgba(242, 242, 242, 0.735), rgb(255, 255, 255)); 
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+    text-align: center; /* Center-align the text */
+}
+
+.about-section {
+    border-radius: 30px;
+    background: linear-gradient(rgb(224, 224, 224), rgb(255, 255, 255));
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) 0 -2px 0 0;
+    text-align: justify; /* Justify text */
+}
+
+.about-section p {
+    text-align: justify;
+    margin: 15px;
+}
+
+footer {
+    background-image: url('images/footer_bg.png');
+    background-size: auto;
+    padding: 30px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.489); /* This will make the background semi-transparent */
+    background-blend-mode: overlay; /* This will blend the background image with the background color */
+}
+
+footer h2 {
+    margin: 0 0 10px 10px;
+    width: 100%;
+    text-align: center;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+footer .contact-section {
+    margin-top: 50px;
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    text-align: justify;
+    flex: 1;
+    margin-right: 50px;
+}
+
+footer a {
+    color: rgb(0, 20, 120);
+    margin-right: 5px;
+}
+
+footer a:hover {
+    color: rgb(0, 42, 255);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 400px;
+    margin: 30px 30px;
+    margin-bottom: 0px;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor:auto;
+}
+
+.contact-form input,
+.contact-form textarea:hover {
+    background-color: white;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100px;
+    align-self: center;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #252525;
+}
+
+footer img {
+    width: 25px;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+/* Styles for screens smaller than 768px (e.g., tablets and smartphones) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        text-align: center;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .about-section {
+        width: 50%; /* Adjust width for smaller screens */
+    }
+
+    .about-section p {
+        text-align: justify; /* Ensure text remains justified */
+    }
+
+    footer .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contact-form {
+        margin: 0;
+    }
+}
+
+/* Styles for screens smaller than 480px (e.g., smartphones) */
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .typing {
+        font-size: 1.2em;
+    }
+
+    .about-section {
+        width: 75%; /* Adjust width for very small screens */
+        padding: 15px; /* Adjust padding for very small screens */
+    }
+
+    .about-section p {
+        text-align: justify; /* Ensure text remains justified */
+    }
+}
